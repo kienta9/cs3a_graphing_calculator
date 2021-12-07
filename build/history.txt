@@ -1,6 +1,4 @@
-cos(x)
-tan(1/x)
-abs(x^2)
-x^3
-1/(2*x+2)
-
+abs(x)
+log(2x+2)
+tan(x-1)
+cos(2*x^3)

@@ -113,6 +113,7 @@ void animate::processEvents()
     fstream f;
     int k = SB_EQ_LIST;
     string load;
+    ofstream ofs;
 
     while (window.pollEvent(event)) //or waitEvent
     {
@@ -238,6 +239,8 @@ void animate::processEvents()
             case sf::Keyboard::S:
                 if (!input){
                     sidebar[SB_ACTION] = "SAVE";
+                    ofs.open("history.txt", std::ofstream::out | std::ofstream::trunc);
+                    ofs.close();
                     f.open("history.txt");
                     if (f.fail())
                     {
