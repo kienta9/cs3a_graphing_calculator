@@ -1,4 +1,8 @@
 abs(x)
-log(2x+2)
+log(2*x+2)
 tan(x-1)
 cos(2*x^3)
+x
+2+x
+tan(1/x)
+cos(x^3)
